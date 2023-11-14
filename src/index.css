@@ -1,0 +1,19 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, "BlinkMacSystemFont", "PingFang SC", "HarmonyOS_Regular", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "blueprint-icons-16", "Microsoft YaHei", sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: top-left;
+  min-width: 320px;
+  min-height: 100vh;
+}

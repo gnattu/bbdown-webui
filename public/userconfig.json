@@ -1,0 +1,9 @@
+{
+  "bbdownUrl": "http://127.0.0.1:23333",
+  "bbdownMyOptions": {
+    "MultiThread": true,
+    "ForceHttp": true,
+    "SkipAi": true,
+    "ForceReplaceHost": true
+  }
+}

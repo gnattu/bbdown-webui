@@ -1,0 +1,79 @@
+@import "normalize.css";
+@import "@blueprintjs/core/lib/css/blueprint.css";
+@import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+#root {
+  margin: 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav {
+  width: 100vw;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #main {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .task-submit-form {
+    margin: 2rem 20px 0px 20px;
+  }
+}
+
+.add-task-panel {
+  text-align: left;
+}
+
+.download-task {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.twoline {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.progressbar {
+  flex: 4 1 300px;
+}
+
+.simple-select {
+  min-width: 10em;
+}
+
+.finished-task-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-item-responsive {
+  margin: 5px;
+}
+.flex-item-footer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.flex-item-footer-item {
+  margin: 2px;
+}
+
+.card {
+  padding: 2em;
+}
