@@ -1,6 +1,6 @@
 # BBDown WebUI
 
-BBDown WebUI是一个Web前端，适用于BBDown的JSON API模式。旨在方便将BBDown作为自建服务使用。
+BBDown WebUI是一个Web前端，适用于[BBDown](https://github.com/nilaoda/BBDown)的[JSON API](https://github.com/nilaoda/BBDown/blob/master/json-api-doc.md)模式。旨在方便将BBDown作为自建服务使用。
 
 ## 特性
 
