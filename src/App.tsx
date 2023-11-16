@@ -33,6 +33,7 @@ import {
 import * as defaultConfig from './defaultconfig.json'
 import { ConfigContext } from './context'
 import { AddTask } from './add-task'
+import DefaultCover from './assets/deafult-cover.svg'
 
 const queryClient = new QueryClient()
 moment.locale('zh-cn')
@@ -85,7 +86,7 @@ const DownloadingTask = (props: DownloadTaskPros) => {
 }
 
 const FinishedTask = (props: DownloadTaskPros) => {
-  const { Aid, Title, Pic, TaskFinishTime, IsSuccessful } = props.task
+  const { Aid, Title, Pic, TaskFinishTime, IsSuccessful, Url } = props.task
   const { bbdownUrl } = useContext(ConfigContext)
   const deleteFinishedTask = useMutation({
     mutationFn: async (aid: string) => {
@@ -104,14 +105,14 @@ const FinishedTask = (props: DownloadTaskPros) => {
       <LazyLoadImage
         className="flex-item-responsive"
         style={{ flex: '0 1 128px' }}
-        src={Pic}
+        src={Pic ?? DefaultCover}
         width="128"
       />
       <div
         className="flex-item-responsive finished-task-right"
         style={{ flex: '1 0 128px', minWidth: '128px', textAlign: 'left' }}
       >
-        <span className="twoline">{Title}</span>
+        <span className="twoline">{Title ?? Url}</span>
         <div className="flex-item-footer">
           <Tag className="flex-item-footer-item" minimal>
             {moment(TaskFinishTime * 1000).fromNow()}
