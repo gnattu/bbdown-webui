@@ -41,7 +41,7 @@ const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)')
 await queryClient.prefetchQuery({
   queryKey: ['config', defaultConfig],
   queryFn: async () => {
-    const res = await fetch(`/userconfig.json`)
+    const res = await fetch(`userconfig.json`)
     if (!res.ok) {
       throw new Error('Network response was not ok')
     }
